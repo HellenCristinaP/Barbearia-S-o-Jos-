@@ -1,0 +1,164 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=New+Rocker&family=Pirata+One&display=swap");
+
+$color-primary: #524737;
+$color-secundary: #dabf8a;
+$black-tranparente: #00000094;
+
+@mixin box-shadow($numb, $blur, $color) {
+  box-shadow:
+    0 #{-$numb}px #{$blur}px $color,
+    #{-$numb}px 0 #{$blur}px $color,
+    #{$numb}px 0 #{$blur}px $color,
+    0 #{$numb}px #{$blur}px $color;
+}
+
+@mixin text-shadow($numb, $color) {
+  text-shadow:
+    0 #{-$numb}px 0 $color,
+    #{-$numb}px 0 0 $color,
+    #{$numb}px 0 0 $color,
+    0 #{$numb}px 0 $color !important;
+}
+
+header {
+  background-color: $color-secundary;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-toggler {
+  border: 1px solid $color-primary;
+
+  &:focus {
+    @include box-shadow(2, 0, $color-primary);
+  }
+}
+
+.nav-link {
+  color: $color-primary;
+}
+
+.nav-link:hover {
+  color: $color-primary;
+  @include text-shadow(1, $color-primary);
+}
+
+.active {
+  color: darken($color-primary, 20%);
+
+  &:active {
+    @include text-shadow(1, darken($color-primary, 20%));
+  }
+}
+
+#logo {
+  width: 8vh;
+  height: 8vh;
+}
+
+#Home {
+  background:
+    linear-gradient($black-tranparente, $black-tranparente),
+    url("/imgs/barba.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.btn {
+  background-color: $color-primary;
+  color: lighten($color-secundary, 10%);
+
+  &:active {
+    outline: 2px solid $color-secundary;
+    outline-offset: -2px;
+  }
+
+  &:hover {
+    background-color: darken($color-primary, 5%);
+  }
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "New Rocker", sans-serif;
+  font-size: 2rem;
+  margin: 15px;
+
+  span {
+    background-clip: text;
+    color: $color-secundary;
+    @include text-shadow(2, $black-tranparente);
+  }
+}
+
+h2 {
+  @extend h1;
+  font-size: 1.8rem;
+  color: #030303;
+  text-align: center;
+  margin: 1em;
+}
+
+h3 {
+  @extend h2;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#Servicos {
+  .card {
+    margin: 2em 0.8em;
+    padding: 0;
+    width: 15.5rem;
+    height: fit-content;
+    transition: scale 2s ease-in-out;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+section > p {
+  margin: 0 15% 5%;
+}
+
+#Depoimentos {
+  .card {
+    margin: 10px 0;
+  }
+}
+
+#Contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+
+  a {
+    color: $color-primary;
+
+    &:hover {
+      color: darken($color-primary, 20%);
+    }
+  }
+}
+
+footer {
+  @extend #Contato;
+  margin-bottom: 30px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+}

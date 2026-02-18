@@ -1,0 +1,21 @@
+{
+  "name": "barbearia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bootstrap": "",
+    "sass": "sass sass/style.scss styles/style.css",
+    "sass:watch": "sass --watch sass/style.scss styles/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "sass": "^1.97.3"
+  }
+}

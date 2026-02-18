@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia São José</title>
+
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="Logo da marca" id="logo"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto p-2">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Sobre">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Depoimentos">Depoimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="Home">
+    <h1>Bem-vindo a barbearia <span>São José</span></h1>
+    <button class="btn btnHome">Marque seu corte</button>
+  </section>
+  <main>
+    <section id="Sobre">
+      <h2>Sobre</h2>
+      <p>Com 35 anos de atuação em Santa Catarina, a Barbearia de São José é um marco de excelência e tradição. Fundada
+        por uma visão audaciosa de transformação, nossa casa cresceu sob os valores de um atendimento impecável e o
+        calor humano que só uma gestão familiar como a de João e seu pai José, pode oferecer.
+        <br>
+        Fomos pioneiros em trazer a barboterapia para o estado, elevando o padrão do autocuidado masculino. Ser a maior
+        barbearia de São José é uma responsabilidade que renovamos a cada atendimento, garantindo que você receba sempre
+        o melhor da técnica clássica com o conforto moderno.
+      </p>
+    </section>
+    <section id="Servicos">
+      <section>
+        <div class="container text-center">
+          <div class="row g-5 justify-content-center">
+            <div class="card shadow">
+              <img src="imgs/barba.jpg" class="card-img-top" alt="imagem de um homem cortando a barba">
+              <div class="card-body">
+                <h3>Cortar a barba</h3>
+                <span class="fw-bold">R$ 150,00</span>
+                <p>Deixamos sua barba com mais personalidade e simetria</p>
+              </div>
+            </div>
+            <div class="card shadow">
+              <img src="imgs/cabelo.jpg" class="card-img-top" alt="homem cortando cabelo">
+              <div class="card-body">
+                <h3>Corte de cabelo</h3>
+                <spanc class="fw-bold">R$ 185,00</spanc>
+                <p>Visagismo personalizado e finalização clássica. É mais que um corte</p>
+              </div>
+            </div>
+            <div class="card shadow">
+              <img src="imgs/barboterapia.jpg" class="card-img-top" alt="homem dando massagem na barba com um pincel">
+              <div class="card-body">
+                <h3>Barboterapia</h3>
+                <span class="fw-bold">R$ 175,00</span>
+                <p>A técnica pioneira em Santa Catarina. Relaxamento com toalhas quentes e óleos essenciais</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="Depoimentos">
+      <h2>Depoimentos</h2>
+      <div id="carouselDepoimentos" class="carousel slide bg-light py-5 shadow-sm rounded">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1" style="background-color: #000;"></button>
+          <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="1" aria-label="Slide 2"
+            style="background-color: #000;"></button>
+          <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="2" aria-label="Slide 3"
+            style="background-color: #000;"></button>
+          <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="3" aria-label="Slide 4"
+            style="background-color: #000;"></button>
+          <button type="button" data-bs-target="#carouselDepoimentos" data-bs-slide-to="4" aria-label="Slide 5"
+            style="background-color: #000;"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center align-items-center" style="min-height: 250px;">
+              <div class="text-center p-4" style="max-width: 600px;">
+                <p class="fs-5 italic">"Frequento a Barbearia há mais de 20 anos. O João herdou o talento do pai. A
+                  maior da cidade e, com certeza, a melhor!"</p>
+                <hr class="w-25 mx-auto">
+                <h6 class="fw-bold text-muted">- Ricardo S.</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center" style="min-height: 250px;">
+              <div class="text-center p-4" style="max-width: 600px;">
+                <p class="fs-5">"O corte de R$ 185,00 vale cada centavo. O visagismo mudou minha imagem profissional.
+                  Atendimento impecável."</p>
+                <hr class="w-25 mx-auto">
+                <h6 class="fw-bold text-muted">- Guilherme M.</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center" style="min-height: 250px;">
+              <div class="text-center p-4" style="max-width: 600px;">
+                <p class="fs-5">"A Barboterapia é uma experiência de luxo única em SC. Relaxamento total e um cuidado
+                  que nunca vi em outro lugar."</p>
+                <hr class="w-25 mx-auto">
+                <h6 class="fw-bold text-muted">- Thiago L.</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center" style="min-height: 250px;">
+              <div class="text-center p-4" style="max-width: 600px;">
+                <p class="fs-5">"O design de barba deu uma personalidade nova ao meu rosto. O ambiente respira história
+                  e tradição."</p>
+                <hr class="w-25 mx-auto">
+                <h6 class="fw-bold text-muted">- Felipe A.</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center" style="min-height: 250px;">
+              <div class="text-center p-4" style="max-width: 600px;">
+                <p class="fs-5">"Visitei São José e tive que conhecer a barbearia mais tradicional. Atendimento de
+                  primeira e muita história envolvida."</p>
+                <hr class="w-25 mx-auto">
+                <h6 class="fw-bold text-muted">- Marcos V.</h6>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+    <section id="Contato">
+      <h2>Contato</h2>
+      <form action="#">
+          <label for="formControlInput1" class="form-label">Seu Email:</label>
+          <input type="email" class="form-control" id="formControlInput1" placeholder="name@example.com">
+        <div class="mb-3">
+          <label for="formControlTextarea1" class="form-label">Sua mensagem:</label>
+          <textarea class="form-control" id="formControlTextarea1" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      </form>
+      <a href="tel:(48) 3241-0035">(48) 3241-0035</a>
+      <a href="mailto:contato@barbeariasaojose.com.br">contato@barbeariasaojose.com.br</a>
+    </section>
+  </main>
+  <hr>
+  <footer> Criado por <a href="ww.linkedin.com/in/hellen-cristina-araujo-da-silva"> Hellen Cristina</a></footer>
+  <script src="/scripts/components/nav.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
