@@ -11950,14 +11950,14 @@ h3, .h3 {
 }
 
 #Servicos .card {
-  margin: 2em 0.8em;
+  margin: 2.85em 0.8em;
   padding: 0;
   width: 15.5rem;
   height: fit-content;
   transition: scale 2s ease-in-out;
 }
 #Servicos .card:hover {
-  scale: 1.1;
+  scale: 1.08;
 }
 
 section > p {
